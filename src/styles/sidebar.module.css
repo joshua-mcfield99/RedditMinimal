@@ -1,0 +1,7 @@
+.sidebar_container {
+    width: 20%;
+    height: 100%;
+    float: right;
+    background-color: #fff;
+    min-height: 100vh;
+}
