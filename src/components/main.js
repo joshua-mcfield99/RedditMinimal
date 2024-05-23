@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts } from '../redux/redditSlice';
 import styles from '../styles/main.module.css'
 import Tile from './tile'
 
 
-const data = [
+/*const data = [
     {
         title: 'title 1',
         author: 'Mr ABC',
@@ -33,9 +34,10 @@ const data = [
         votes: '2.3k',
         posted: '8 hours ago'
     }
-]
+]*/
 
 const Main = () => {
+    const { subreddit } = useParams();
     const dispatch = useDispatch();
     const posts = useSelector((state) => state.reddit.posts);
     const status = useSelector((state) => state.reddit.status);
@@ -43,16 +45,18 @@ const Main = () => {
 
 
     useEffect(() => {
-        if (status === 'idle') {
-          dispatch(fetchPosts());
-        }
-      }, [status, dispatch]);
+        if (subreddit) {
+            dispatch(fetchPosts(subreddit));
+          } else {
+            dispatch(fetchPosts('popular'));
+          }
+        }, [subreddit, dispatch]);
     
-      if (status === 'loading') {
-        return <div>Loading...</div>;
-      }
+    if (status === 'loading') {
+      return <div>Loading...</div>;
+    }
     
-      if (status === 'failed') {
+    if (status === 'failed') {
         return <div>Error: {error}</div>;
     }
 
