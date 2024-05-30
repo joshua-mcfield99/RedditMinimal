@@ -46,31 +46,31 @@
 
 ## Project Structure
 
-reddit-minimal/
-├── public/
-│ ├── index.html
-│ └── ...
-├── src/
-│ ├── components/
-│ │ ├── Filter.js
-│ │ ├── Header.js
-│ │ ├── Main.js
-│ │ ├── SearchBar.js
-│ │ ├── Tile.js
-│ │ └── ...
-│ ├── redux/
-│ │ ├── redditSlice.js
-│ │ └── store.js
-│ ├── styles/
-│ │ ├── filter.module.css
-│ │ ├── main.module.css
-│ │ ├── searchbar.module.css
-│ │ └── tile.module.css
-│ ├── App.js
-│ ├── index.js
-│ └── ...
-├── package.json
-└── README.md
+- reddit-minimal/
+- ├── public/
+- │ ├── index.html
+- │ └── ...
+- ├── src/
+- │ ├── components/
+- │ │ ├── Filter.js
+- │ │ ├── Header.js
+- │ │ ├── Main.js
+- │ │ ├── SearchBar.js
+- │ │ ├── Tile.js
+- │ │ └── ...
+- │ ├── redux/
+- │ │ ├── redditSlice.js
+- │ │ └── store.js
+- │ ├── styles/
+- │ │ ├── filter.module.css
+- │ │ ├── main.module.css
+- │ │ ├── searchbar.module.css
+- │ │ └── tile.module.css
+- │ ├── App.js
+- │ ├── index.js
+- │ └── ...
+- ├── package.json
+- └── README.md
 
 css
 
@@ -89,11 +89,11 @@ css
 
 **Actions:**
 
-    fetchPosts(subreddit): Fetches posts from the specified subreddit.
-    searchPosts(query): Fetches posts based on the search query.
-    setSubreddit(subreddit): Sets the selected subreddit.
-    upvotePost(postId): Upvotes the specified post.
-    downvotePost(postId): Downvotes the specified post.
+- fetchPosts(subreddit): Fetches posts from the specified subreddit.
+- searchPosts(query): Fetches posts based on the search query.
+- setSubreddit(subreddit): Sets the selected subreddit.
+- upvotePost(postId): Upvotes the specified post.
+- downvotePost(postId): Downvotes the specified post.
 
 ## API Endpoints
 
