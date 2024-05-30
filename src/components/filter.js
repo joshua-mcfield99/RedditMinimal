@@ -17,7 +17,7 @@ const Filter = () => {
 
     return (
         <div className={styles.filter_container}>
-            <select value={subreddit} onChange={handleSubredditChange}>
+            <select value={subreddit} onChange={handleSubredditChange} aria-label='subreddit selector'>
                 <option value="popular">Popular</option>
                 <option value="reactjs">ReactJS</option>
                 <option value="javascript">JavaScript</option>

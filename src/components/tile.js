@@ -57,6 +57,7 @@ const Tile = ({ id, title, img, comments, votes, posted, author }) => {
                     <button
                         className={isUpvoted ? styles.upvoted_b : ''}
                         onClick={handleUpvote}
+                        aria-label='Upvote button'
                     >
                         <ArrowUpwardRoundedIcon />
                     </button> 
@@ -64,6 +65,7 @@ const Tile = ({ id, title, img, comments, votes, posted, author }) => {
                     <button
                         className={isDownvoted ? styles.downvoted_b : ''}
                         onClick={handleDownvote}
+                        aria-label='Downvote button'
                     >
                         <ArrowDownwardRoundedIcon />
                     </button> 
