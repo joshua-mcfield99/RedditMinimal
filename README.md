@@ -2,7 +2,7 @@
 
 **Reddit Minimal** is a simplified Reddit client built using React and Redux. The application allows users to browse posts from various subreddits, filter posts by selected subreddits, perform searches, and view posts based on search queries.
 
-If you want to view the site in action check it out here >> 
+If you want to view the site in action check it out here >> https://redditminimalbyjosh.netlify.app
 
 ## Table of Contents
 
