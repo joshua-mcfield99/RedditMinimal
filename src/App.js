@@ -2,25 +2,22 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Main from './components/main';
-import SideBar from './components/sideBar';
-
 
 function App() {
-  return (
-    <Router>
-        <div className="App">
-            <Header />
-            <div>
-                <SideBar />
-                <Routes>
-                    <Route path='/' element={<Main />} />
-                    <Route path='/r/:subreddit' element={<Main />} />
-                </Routes>
-                <Main />
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <main>
+                    <Routes>
+                        <Route path="/r/:subreddit" element={<Main />} />
+                        <Route path="/search" element={<Main />} />
+                        <Route path="/" element={<Main />} />
+                    </Routes>
+                </main>
             </div>
-        </div>
-    </Router>
-  );
+        </Router>
+    );
 }
 
 export default App;

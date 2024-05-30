@@ -1,0 +1,18 @@
+.filter_container {
+    width: 50%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_container select {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 5px;
+    font-size: 1rem;
+    padding: 10px;
+    border: solid #aaa 2px;
+    cursor: pointer;
+}

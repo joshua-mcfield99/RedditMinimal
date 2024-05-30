@@ -1,5 +1,5 @@
 .main_container {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,4 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.loading {
+    width: 20%;
+    margin: 100px auto;
+    text-align: center;
 }
