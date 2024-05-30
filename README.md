@@ -72,9 +72,6 @@ reddit-minimal/
 ├── package.json          
 └── README.md              
 
-css
-
-
 ## Redux State Management
 
 - **State Structure:**
