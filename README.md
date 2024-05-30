@@ -46,31 +46,31 @@
 
 ## Project Structure
 
-- reddit-minimal/
-- ├── public/
-- │ ├── index.html
-- │ └── ...
-- ├── src/
-- │ ├── components/
-- │ │ ├── Filter.js
-- │ │ ├── Header.js
-- │ │ ├── Main.js
-- │ │ ├── SearchBar.js
-- │ │ ├── Tile.js
-- │ │ └── ...
-- │ ├── redux/
-- │ │ ├── redditSlice.js
-- │ │ └── store.js
-- │ ├── styles/
-- │ │ ├── filter.module.css
-- │ │ ├── main.module.css
-- │ │ ├── searchbar.module.css
-- │ │ └── tile.module.css
-- │ ├── App.js
-- │ ├── index.js
-- │ └── ...
-- ├── package.json
-- └── README.md
+reddit-minimal/  
+├── public/  
+│ ├── index.html  
+│ └── ...  
+├── src/  
+│ ├── components/       
+│ │ ├── Filter.js         
+│ │ ├── Header.js         
+│ │ ├── Main.js         
+│ │ ├── SearchBar.js      
+│ │ ├── Tile.js        
+│ │ └── ...      
+│ ├── redux/            
+│ │ ├── redditSlice.js           
+│ │ └── store.js          
+│ ├── styles/           
+│ │ ├── filter.module.css           
+│ │ ├── main.module.css         
+│ │ ├── searchbar.module.css       
+│ │ └── tile.module.css         
+│ ├── App.js        
+│ ├── index.js        
+│ └── ...      
+├── package.json          
+└── README.md              
 
 css
 
